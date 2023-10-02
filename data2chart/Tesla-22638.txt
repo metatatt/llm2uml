@@ -1,0 +1,31 @@
+==== BEGIN SOURCE ====
+Article #22638 - "Check back turn signal bulb"
+alert, with improper output from switchpack
+Description
+"Check left/right back turn signal bulb" alert, with improper output from switchpack.
+Steps to Test
+Check fuse 7.
+Measure the voltage at the turn signal switch connector (Left FHC9 - pin 49AL)(Right FHC9 - pin 49AR).
+Bridge the appropriate terminals to bypass the turn signal switch.
+Steps to Fix
+Replace the fuse if damaged.
+If the voltage does not equal 12V, check/repair the wiring/connectors.
+If the signal operates while bypassing the turn signal switch, replace the switch (Part#2000253). Otherwise,
+check/repair the wiring/connectors.
+Possible Effects
+Article #21635 SWP 536 Check left back turn signal bulb
+Article #21637 SWP 538 Check right back turn signal bulb
+Possible Causes
+Unknown.
+==== END SOURCE ====
+
+==== BEGIN DIAGRAM OUTPUT ====
+[<table>#22638|Back turn signal bulb
+(w outupt switchpack)] -> 
+[<start>start] ->[<state>Steps to Test] -> 
+[fuse 7]->[Measure voltage|connector RHC13]->[<end>]
+[<state>Steps to Fix] 
+[<start>start] -> [<state>Steps to Fix] ->[<choice>proper output]->
+[<state>yes]->[replace rear taillights]
+[<state>no]->[investigate furtuer]->[<end>]
+==== END DIAGRAM OUTPUT ====

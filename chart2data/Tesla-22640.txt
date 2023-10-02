@@ -1,0 +1,32 @@
+==== BEGIN SOURCE OUTPUT ====
+Article #22640 - "Check front turn signal bulb"
+alert, with improper output from switchpack
+Description
+"Check left/right front turn signal bulb" alert, with improper output from switchpack.
+Steps to Test
+Check fuse 7.
+Measure the voltage at the turn signal switch connector (Left FHC9 - pin 49AL)(Right FHC9 - pin 49AR).
+Bridge the appropriate terminals to bypass the turn signal switch.
+Steps to Fix
+Replace the fuse if damaged.
+If the voltage does not equal 12V, check/repair the wiring/connectors.
+If the signal operates while bypassing the turn signal switch, replace the switch (Part# 2000253). Otherwise,
+check/repair the wiring/connectors.
+Possible Effects
+Article #21636 SWP 537 Check left front turn signal bulb
+Article #21638 SWP 539 Check right front turn signal bulb
+Possible Causes
+'''
+==== END SOURCE OUTPUT ====
+
+==== BEGIN DIAGRAM INPUT ====
+[<table>#22640|front turn signal bulb
+(wo outupt switchpack)] -> 
+[<start>start] ->[<state>Steps to Test] -> 
+[fuse 7]->[Measure voltage|Left FHC9|Right FHC9]->[<end>]
+[<start>start] ->[<state>Steps to Fix] ->[replace fuse]->[<choice>voltage 12v]->
+[<state>no]->[check repair| wiring/connectors]->
+[<choice>signal operates|while bypassing switch]->
+[replace the switch (Part# 2000253)]->[<end>]
+==== END DIAGRAM INPUT ====
+

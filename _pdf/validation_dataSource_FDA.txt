@@ -1,0 +1,12 @@
+#WI 352.001 Method of Cleaning
+
+document :WI 320 
+
+Work Instructions for 
+
+Method of Cleaning
+* If the cleaning instructions recommend a 10 to 20 minute pre-soak, the validation protocols should specify 10 minutes.
+* If the cleaning instructions advise the user to manually clean at 45ºC ± 5ºC, the validation protocols should specify cleaning at 40ºC.
+* Enzymatic Detergents: In general, “worst-case” implies shortest times, lowest temperatures, etc. An exception to validation at lowest temperature would be enzymatic detergents, which typically have “optimally effective” temperature ranges. Validation protocols should adequately address the temperature range specified in the cleaning instructions for enzymatic detergents.
+* Medical Washers/Disinfectors: If your process validation uses automated medical washers/washer disinfectors or ultrasonic cleaners, your worst-case should include the extremes of the intended cycle parameters for the available washer/washer disinfector cycles or ultrasonic cleaners.
+* If a device consists of lumens, ports, or channels that must be flushed during cleaning, the validation protocol should include minimal flushing specifications, such as time, flush volume or flow rate, and number of repetitions (e.g., 10 mL flush, performed 3 times).

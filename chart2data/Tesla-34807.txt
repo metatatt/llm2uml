@@ -1,0 +1,23 @@
+==== BEGIN SOURCE OUTPUT ====
+#Article #34807 - 1.5 to 3.0 Upgrade VMS firmware flash fails
+Description
+The Vehicle Management System (VMS) fails to update using the Roadster Firmware Update tool, despite
+following SI-16-16-003 procedure.
+Steps to Test
+Steps to Fix
+Launch DSD Auto Update. Scan for packages. Because the other vehicle components have already updated
+successfully, DSD Auto should now suggest the package you attempted to update to using Roadster Firmware
+Update tool.
+Download firmware using DSD Auto Update.
+Possible Effects
+Article #32525 Firmware job issue
+Possible Causes
+'''
+==== END SOURCE OUTPUT ====
+
+==== BEGIN DIAGRAM INPUT ====
+stateDiagram
+Tesla\#34807-->Steps_to_Fix
+Steps_to_Fix-->Launch_DSD_Auto_Update
+Steps_to_Fix-->Download_Firmware_DSD_Auto_Update
+==== END DIAGRAM INPUT ====

@@ -1,0 +1,1 @@
+  ''' #WI 352.001 Method of Cleaning   document :WI 352   Work Instructions for   Method of Cleaning   [Operator]   Pre-soak the unit for 10 minutes and clean at 40ºC.   [Inspector]  Check if the temperature range specified is within the flushing specifications.  '''

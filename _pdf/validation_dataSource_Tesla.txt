@@ -1,0 +1,26 @@
+
+Article #32596 - 1.5 PEM fan harness damage
+Description
+Damage to the electrical harness or fuse supplying the PEM fan is causing DFC pole fan alerts.
+Steps to Test
+1. Component activate the PEM fan using MTS and check for fan operation.
+2. Measure voltage at RHC 9 pins 1 & 2 (+ / - ).
+3. Check the PEM fan fuse.
+4. Inspect the fan harness. Check for corrosion, shorts to power/ground, etc between RHC 9 (PEM fan) and
+RHC 12 (PEM logic).
+Steps to Fix
+Replace fuse or repair harness. If confirmed to be a problem internal to the PEM (not serviceable) then replace the
+PEM.
+
+Article #34807 - 1.5 to 3.0 Upgrade VMS firmware flash
+fails
+Description
+The Vehicle Management System (VMS) fails to update using the Roadster Firmware Update tool, despite
+following SI-16-16-003 procedure.
+Steps to Test
+Steps to Fix
+Launch DSD Auto Update. Scan for packages. Because the other vehicle components have already updated
+successfully, DSD Auto should now suggest the package you attempted to update to using Roadster Firmware
+Update tool.
+Download firmware using DSD Auto Update
+

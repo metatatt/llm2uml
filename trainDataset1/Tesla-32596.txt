@@ -1,0 +1,34 @@
+==== BEGIN SOURCE ====
+#Article #32596 - 1.5 PEM fan harness damage
+Description
+Damage to the electrical harness or fuse supplying the PEM fan is causing DFC pole fan alerts.
+Steps to Test
+1. Component activate the PEM fan using MTS and check for fan operation.
+2. Measure voltage at RHC 9 pins 1 & 2 (+ / - ).
+3. Check the PEM fan fuse.
+4. Inspect the fan harness. Check for corrosion, shorts to power/ground, etc between RHC 9 (PEM fan) and
+RHC 12 (PEM logic).
+Steps to Fix
+Replace fuse or repair harness. If confirmed to be a problem internal to the PEM (not serviceable) then replace the
+PEM.
+Possible Effects
+Article #21966 DFC 1207 DFC: Pole Fan Failed
+Article #21967 DFC 1208 DFC: Pole Fan OverCurrent
+Article #21968 DFC 1209 DFC: Pole Fan 12V OverVoltage
+Article #21969 DFC 1210 DFC: Pole Fan 12V UnderVoltage
+Article #21971 DFC 1212 DFC: Pole Fan UnderCurrent
+Article #21974 DFC 1215 DFC: Pole Fan Power Failed
+Possible Causes
+'''
+==== END SOURCE ====
+
+==== BEGIN DIAGRAM OUTPUT ====
+[<table>#32596|1.5 PEM fan harness damage] -> 
+[<start>start] ->[<state>Steps to Test] -> 
+[component activate| using MTS |check fan operation]->
+[component voltage| RHC 9pins 1&2 (+/-)]->[check PEM fan fuse]->[Inspect fan harness]->
+[<end>]
+[<start>start] ->[<state>Steps to Fix] ->[replace fuse|or repair harness]->
+[if then replace PEM]->[<end>]
+==== END DIAGRAM OUTPUT ====
+

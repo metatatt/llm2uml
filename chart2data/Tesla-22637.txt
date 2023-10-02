@@ -1,0 +1,28 @@
+==== BEGIN SOURCE OUTPUT ====
+#Article #22637 - "Check back turn signal bulb" wo proper output
+alert, with proper output from switchpack
+Description
+"Check left/right rear signal bulb" with proper output at rear taillight connector (RHC13)
+Steps to Test
+Measure the output at the rear taillight harness connector (RHC13).
+Steps to Fix
+If there is proper output, Replace the rear taillight lens assembly (Left-Part# 2003445, right-Part# 2003446).
+Otherwise, pursue possible causes to investigate further.
+Possible Effects
+Article #21635 SWP 536 Check left back turn signal bulb
+Article #21637 SWP 538 Check right back turn signal bulb
+Possible Causes
+'''
+==== END SOURCE OUTPUT ====
+
+
+==== BEGIN DIAGRAM INPUT ====
+[<table>#22637|Back turn signal bulb
+(no outupt switchpack)] -> 
+[<start>start] -> [<state>Steps to Test] -> 
+[Measure Ouput|Rear taillight|connector RHC13]->[<end>]
+[<state>Steps to Fix] 
+[<start>start] -> [<state>Steps to Fix] ->[<choice>proper output]->
+[<state>something]
+[<choice>proper output]->[<end>]
+==== END DIAGRAM INPUT ====

@@ -1,0 +1,29 @@
+==== BEGIN SOURCE ====
+'''
+WI 320.005 Affix Label/Completion 
+
+#WI 320 
+
+Work Instructions for 
+
+Mini Lens Assembly (v2) 
+
+320.005 Affix Label/Completion 
+[operator]
+Labeling: attach #S050 (Tag Label) to the unit with the appropriate identification. 
+Include relevant information such as serial numbers, batch numbers, and production date. 
+
+[inspector]
+Check if there is a presence of #S050 (Tag Label). 
+'''
+==== END SOURCE ====
+
+==== BEGIN DIAGRAM OUTPUT ====
+[<table>#WI 320.005|Affix Label/Completion ] -> 
+[<start>start] ->[<usecase> operator] -> 
+[attach #S050 (Tag Label) to the unit]->
+
+[<end>]
+[<start>start] ->[<usecase> inspector] ->
+[presence of #S050]->[<end>]
+==== END DIAGRAM OUTPUT ====

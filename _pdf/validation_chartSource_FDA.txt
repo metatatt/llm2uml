@@ -1,0 +1,3 @@
+   [<table>#WI 352.001|Method of Cleaning] ->  [<start>start] ->[<usecase> operator]->  [pre-soak 10 minutes | cleaning at 40ºC]->
+   [<end>]
+   [<start>start] ->[<usecase> inspector] -> [temperature range specified | flushing specifications]->[<end>]

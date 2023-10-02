@@ -1,0 +1,34 @@
+==== BEGIN SOURCE ====
+'''
+WI 320.004 Final Inspection 
+
+#WI 320 
+
+Work Instructions for 
+
+Mini Lens Assembly (v2) 
+
+320.004 Final Inspection 
+
+[Operator]
+Visually inspect the entire assembly for any defects. 
+Ensure there are no loose connections, soldering defects, or visible contaminants on the lens. 
+Verify that all components are securely attached. 
+
+[inspector]
+Inspection targets: 
+Check if there is a presence of clean #3011 Lens. 
+'''
+==== END SOURCE ====
+
+==== BEGIN OUTPUT ====
+[<table>#WI 320.004|Final Inspection] -> 
+[<start>start] ->[<usecase> operator] -> 
+[Visually inspect ]->
+[the Raspberry Pi board #3010]->
+[ no loose connections, |soldering defects, or |visible contaminants on the lens]->
+[all components securely attached]->
+[<end>]
+[<start>start] ->[<usecase> inspector] ->
+[presence of #3012]->[<end>]
+==== END OUTPUT ====

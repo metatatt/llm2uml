@@ -1,0 +1,38 @@
+==== BEGIN SOURCE ====
+'''
+#WI 320.001 Affix Safety Screw
+
+document :WI 320 
+
+Work Instructions for 
+
+Mini Lens Assembly (v2) 
+
+
+ 
+
+[Operator]  
+
+Use #S047 (Soldering Station) to solder #3012 (Safety Screw) to #3010 (Raspberry Pi Pico). 
+Ensure there are no soldering defects. 
+Ensure the position of the Safety Screw is correct. 
+Do not use an un-marked screw when processing this step. 
+Verify that the lens is securely attached to the adapter board. 
+
+ 
+
+[Inspector]: 
+
+Check if there is a presence of both #3012 (Safety Screw) and #3010 (Raspberry Pi Pico) 
+==== END SOURCE ====
+
+==== BEGIN DIAGRAM OUTPUT ====
+[<table>#WI 320.001|Mini Lens Assembly (v2)] -> 
+[<start>start] ->[<usecase> operator] -> 
+[#S047 (Soldering Station) ]->
+[#3012 (Safety Screw) ]->
+[#3010 (Raspberry Pic) ]->
+[<end>]
+[<start>start] ->[<usecase> inspector] ->[presence of #3012]->
+[presence of #3010]->[<end>]
+==== END DIAGRAM OUTPUT ====

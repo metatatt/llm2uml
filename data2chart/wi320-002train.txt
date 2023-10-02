@@ -1,0 +1,33 @@
+==== BEGIN SOURCE ====
+'''
+#WI 320.002 Connect Flex PCB Connector Strips 
+
+Work Instructions for 
+
+Mini Lens Assembly (v2) 
+
+320.002 Connect Flex PCB Connector Strips 
+
+[Operator] 
+Attach #3009 (Flex PCB Connector Strips) to the appropriate connectors on the adapter board #3008. 
+Ensure a secure connection between the flex PCB connector strips and the adapter board. 
+Do not process this step before completing 320.001. 
+Do not use PCB connector strips of the wrong color. 
+Check for any loose connections or misalignments. 
+
+[Inspector] 
+
+Check if there is a presence of #3009 (Flex PCB Connector Strips) and #3008 (Adapter Board). 
+'''
+==== END SOURCE ====
+
+==== BEGIN DIAGRAM OUTPUT ====
+[<table>#WI 320.002|Connect Flex PCB Connector Strips] -> 
+[<start>start] ->[<usecase> operator] -> 
+[#3009 (Flex PCB Connector Strips) ]->
+[ appropriate connectors on the adapter board #3008 ]->
+[Ensure a secure connection between ]->
+[<end>]
+[<start>start] ->[<usecase> inspector] ->[presence of #3008]->
+[presence of #3009]->[<end>]
+==== END DIAGRAM OUTPUT ====

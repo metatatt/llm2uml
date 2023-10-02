@@ -1,0 +1,161 @@
+==== BEGIN SOURCE ====
+'''
+#WI 320 
+
+Work Instructions for 
+
+Mini Lens Assembly (v2) 
+
+ 
+
+Semantic Keywords: WI 320, #WIP320, Work Instructions, Mini Lens Assembly 
+
+Document Control Number: SDAP-WI-320, ver 2 
+Effective Date: [Enter Effective Date] 
+Revision: [Enter Revision Number] 
+
+WIP Name: Mini Lens 
+
+WIP ID: #wip320 
+ 
+
+Components Used: 
+
+#3008, Adapter Board 
+#3009, Flex PCB Connector Strips 
+#3010, Raspberry Pi Pico 
+#3011, Lens 
+#3012, Safety Screw 
+ 
+
+Tools and Supplies: 
+
+#S050, Tag Label 
+#S039, Lens Rinsing Fluids 
+#S047, Soldering Station 
+ 
+
+Roles and Responsibilities: 
+
+[Operator]: Assemble the work and report the Inspection result of each workflow (from 320.001 to 320.005). 
+
+[Lead]: Examine the captured snapshots and/or review the AI inspection report. 
+
+[Virtual Assistant]: Provide guidance during the inspection and complete the Work Complete Form. 
+
+Process Iteration: Direct the Operator on when and where to capture the Inspection Snapshots (see document #WI-035 Virtual Assistant Workflow). 
+
+ 
+
+Work Complete Form: Document the procedure and inspection outcomes in compliance with CFR Regulatory Requirements. The Work Completion Form corresponds to document #WI-033 Bot-Assisted Work Completion Log. 
+
+Workflow 
+
+320.001 Affix Safety Screw 
+
+ 
+
+[Operator]  
+
+Use #S047 (Soldering Station) to solder #3012 (Safety Screw) to #3010 (Raspberry Pi Pico). 
+Ensure there are no soldering defects. 
+Ensure the position of the Safety Screw is correct. 
+Do not use an un-marked screw when processing this step. 
+Verify that the lens is securely attached to the adapter board. 
+
+ 
+
+Inspection: 
+
+Check if there is a presence of both #3012 (Safety Screw) and #3010 (Raspberry Pi Pico) 
+
+ 
+ 
+
+320.002 Connect Flex PCB Connector Strips 
+
+Attach #3009 (Flex PCB Connector Strips) to the appropriate connectors on the adapter board #3008. 
+Ensure a secure connection between the flex PCB connector strips and the adapter board. 
+Do not process this step before completing 320.001. 
+Do not use PCB connector strips of the wrong color. 
+Check for any loose connections or misalignments. 
+
+ 
+
+Inspection targets: 
+
+Check if there is a presence of #3009 (Flex PCB Connector Strips) and #3008 (Adapter Board). 
+
+ 
+ 
+
+320.003 Attach Adapter Board to Raspberry Pi 
+
+Place #3008 (Adapter Board) onto the Raspberry Pi board #3010. 
+Ensure proper alignment of connectors on both boards. 
+Do not open #3011 Lens in this step. 
+Do not use undocumented materials to clean Lens in this step. 
+Avoid damaging any electronic components during this process. 
+ 
+ 
+
+Inspection targets: 
+Check if there is a presence of #3012 (Safety Screw), #3010 (Raspberry Pi Pico), #3008 (Adapter Board), and #3009 (Flex PCB Connector Strips). 
+
+ 
+
+320.004 Final Inspection 
+
+Visually inspect the entire assembly for any defects. 
+Ensure there are no loose connections, soldering defects, or visible contaminants on the lens. 
+Verify that all components are securely attached. 
+ 
+
+Inspection targets: 
+
+Check if there is a presence of clean #3011 Lens. 
+ 
+
+320.005 Affix Label/Completion 
+
+Labeling: attach #S050 (Tag Label) to the unit with the appropriate identification. 
+
+ 
+Include relevant information such as serial numbers, batch numbers, and production date. 
+ 
+
+Ensure compliance with CFR21 labeling requirements. 
+Record all relevant information and documentation regarding the assembly process. 
+ 
+Inspection Target: 
+
+Check if there is a presence of #S050 (Tag Label). 
+ 
+
+Safety Precautions - CFR21 
+
+Always wear safety goggles when soldering. 
+Use #S039 lens rinsing fluids in a well-ventilated area. 
+Avoid touching the soldering iron tip directly. 
+Be cautious of sharp edges on components. 
+Ensure the work area is clean and organized to prevent accidents. 
+ 
+
+Quality Control - CFR21 
+
+Ensure all connections are secure. 
+Verify that the lens is clean and free from any contaminants. 
+Confirm that there are no soldering defects. 
+Test the Raspberry Pi board for proper functionality after assembly. 
+''' 
+==== END SOURCE ====
+
+==== BEGIN OUTPUT ====
+stateDiagram
+WI_320\nMini_Lens-->320.001\nSafety_Screw
+WI_320\nMini_Lens-->320.002\nFlex_Connector
+WI_320\nMini_Lens-->320.003\nAdapter_to_Raspberry
+WI_320\nMini_Lens-->320.004\nFinal_Inspect
+WI_320\nMini_Lens-->320.005\nCompletion_Label
+320.005\nCompletion_Label --> [*]
+==== END OUTPUT ====

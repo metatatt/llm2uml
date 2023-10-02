@@ -1,0 +1,38 @@
+==== BEGIN SOURCE ====
+'''
+WI 320.003 Attach Adapter Board to Raspberry Pi 
+
+#WI 320 
+
+Work Instructions for 
+
+Mini Lens Assembly (v2) 
+
+[Operator] 
+320.003 Attach Adapter Board to Raspberry Pi 
+
+Place #3008 (Adapter Board) onto the Raspberry Pi board #3010. 
+Ensure proper alignment of connectors on both boards. 
+Do not open #3011 Lens in this step. 
+Do not use undocumented materials to clean Lens in this step. 
+Avoid damaging any electronic components during this process. 
+
+[Inspector]
+Inspection targets: 
+Check if there is a presence of #3012 (Safety Screw), #3010 (Raspberry Pi Pico), #3008 (Adapter Board), and #3009 (Flex PCB Connector Strips). 
+'''
+==== END SOURCE ====
+
+==== BEGIN DIAGRAM OUTPUT ====
+[<table>#WI 320.003|Attach Adapter Board to Raspberry Pi] -> 
+[<start>start] ->[<usecase> operator] -> 
+[#3008 (Adapter Board) ]->
+[the Raspberry Pi board #3010]->
+[Ensure proper alignment ]->
+[Do not open #3011 Lens ]->
+[<end>]
+[<start>start] ->[<usecase> inspector] ->[presence of #3008]->
+[presence of #3009]->
+[presence of #3010]->
+[presence of #3012]->[<end>]
+==== END DIAGRAM OUTPUT ====
